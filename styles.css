@@ -1,0 +1,228 @@
+
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #FCFFF5;
+}
+
+#window-box {
+  background-image: url('images/landing1.jpg');
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  color: white;
+}
+
+#headline {
+  clear: both;
+  margin-top: 220px;
+  height: 150px;
+}
+
+#headline h1 {
+  font-size: 6.0rem;
+}
+
+#title {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 10;
+}
+
+#logo {
+  cursor: pointer;
+  height: 36px;
+  position: fixed;
+  z-index: 13;
+  float: left;
+  font-family: 'Quicksand';
+  padding: 10px 30px 10px 30px;
+  margin: 15px 0px 0px 30px;
+  background: #18AAB7;
+  border-radius: 50px;
+  border: solid 2px #18AAB7;
+  transition: all 0.45s ease;
+}
+
+#logo.shrink {
+  width:0px;
+}
+
+#logo h5 {
+  margin-bottom: 0px;
+  transition: all 0.45s ease;
+}
+
+#nav {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: -15px;
+}
+
+#nav.fix-nav {
+  position: fixed;
+  z-index: 11;
+  top: 38px;
+  left: 0px;
+}
+
+.link {
+  display: inline-block;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+#nav p {
+  padding-top: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#nav p:hover {
+  color: #18AAB7;
+}
+
+#content {
+  top: 550px;
+  padding: 0px 60px 60px 60px;
+}
+
+#definition-box {
+  float: right;
+  margin-left: 50px;
+  width: 300px;
+  color: #BBB;
+  margin-top: 65px;
+}
+
+#definition-box div {
+  transition: 1.5s;
+  margin-left: 20px;
+}
+
+#definition-box div.highlight {
+  color: black;
+  margin-left: 0px;
+}
+
+#definition {
+  margin-bottom: 0px;
+}
+
+/*#headshots {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+#headshots div {
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: 30px;
+}*/
+
+#title.past-box {
+  box-shadow: 1px 1px 10px black;
+  background-image: url('images/landing1.jpg');
+  background-position: 0px 156px;
+}
+
+#logo.past-box, #logo:hover {
+  background: none;
+}
+
+#logo.past-box:hover {
+  background: #18AAB7
+}
+
+#menu {
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 12;
+  right: 30px;
+  cursor: pointer;
+  font-family: 'Quicksand';
+  padding: 10px 30px 10px 30px;
+  margin: 15px 0 0;
+  border: solid 2px #18AAB7;
+  width: 75px;
+}
+
+#menu h5 {
+  margin: 0;
+}
+
+#menu:hover {
+  box-shadow: 1px 1px 10px black
+}
+
+#dropdown {
+  display: none;
+}
+
+#dropdown p {
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 540px) {
+  #logo {
+    top: 0px;
+    left: 0px;
+    margin: 0px 0px 0px 0px;
+    width: 99%;
+    height: 65px;
+    padding: 20px 0px 0px 0px;
+    border-radius: 0px;
+  }
+
+  #logo.past-box {
+    background: #18AAB7;
+  }
+
+  #logo h5 {
+    font-size: 3rem;
+  }
+
+  #nav {
+    margin-top: 30px;
+  }
+
+  #nav div {
+    display: block;
+    float: none;
+    margin-right: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+  }
+
+  #headline {
+    margin-bottom: 10px;
+    margin-top: 100px;
+  }
+
+  #headline h1 {
+    font-size: 5.0rem;
+  }
+
+  #headshots div {
+    margin-bottom: 30px;
+  }
+
+  #nav.fix-nav {
+    position: static;
+  }
+
+  #definition-box {
+    margin-top: 10px;
+  }
+
+  #definition-box div.highlight {
+    color: black;
+    margin-left: 40px;
+}
+}
