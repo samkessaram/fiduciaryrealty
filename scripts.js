@@ -52,7 +52,7 @@ $(function(){
   })
 
   $('#dropdown').click(function(){
-    $('#dropdown').css('display','none')
+    $('#dropdown').toggle()
   })
 
 
