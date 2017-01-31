@@ -47,14 +47,17 @@ $(function(){
   })
 
   $('#menu').mouseleave(function(){
-    $('#dropdown').css('display','none')
-    $('#menu').css('background-color','transparent')
+    menuOut()
   })
 
   $('#dropdown').click(function(){
-    $('#dropdown').toggle()
-    $('#menu').blur()
+    menuOut()
   })
+
+  function menuOut(){
+    $('#dropdown').css('display','none')
+    $('#menu').css('background-color','transparent')
+  }
 
 
   function highlightDefintion(stop){
