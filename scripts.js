@@ -51,7 +51,7 @@ $(function(){
     $('#menu').css('background-color','transparent')
   })
 
-  $('#menu').click(function(){
+  $('#dropdown').click(function(){
     $('#dropdown').css('display','none')
   })
 
