@@ -51,6 +51,10 @@ $(function(){
     $('#menu').css('background-color','transparent')
   })
 
+  $('#menu').click(function(){
+    $('#dropdown').css('display','none')
+  })
+
 
   function highlightDefintion(stop){
     var offset = $("#definition-box").offset().top;
