@@ -53,6 +53,7 @@ $(function(){
 
   $('#dropdown').click(function(){
     $('#dropdown').toggle()
+    $('#menu').blur()
   })
 
 
