@@ -40,10 +40,9 @@ $(function(){
     }, 500)
   })
 
-  $('#menu').mouseenter(function(){
+  $('#menu').on('click mouseenter', function(){
     $('#dropdown').css('display','inline-block');
     $('#menu').css({'background-color':'#18AAB7'});
-
   })
 
   $('#menu').mouseleave(function(){
@@ -89,6 +88,7 @@ $(function(){
 
   $(window).on('scroll', function(){
     highlight();
+    menuOut()
   });
 
   function highlight(){
